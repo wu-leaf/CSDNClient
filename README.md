@@ -19,7 +19,6 @@ com.android.support:cardview-v7:24.2.1
 
 ## Screenshots
 <img src="screenshots/gif1.gif" width="300" align="right" hspace="20">
-<img src="screenshots/1.png" width="25%" />
 <img src="screenshots/2.png" width="25%" />
 <img src="screenshots/3.png" width="25%" />
 <img src="screenshots/4.png" width="25%" />
@@ -37,7 +36,7 @@ com.android.support:cardview-v7:24.2.1
 ##About me
 I am a student in China, I love reading novel, love music. 
 At the same time, I am also obsessed with writing code.
-If you have any new idea about this project,welcome to [contact me](mailto:veyron_gz@163.com). :smiley:
+If you have any new idea about this project,welcome to [contact me:veyron_gz@163.com](mailto:veyron_gz@163.com). :smiley:
 
 In addition, my blog: [http://blog.csdn.net/leaf_130](http://blog.csdn.net/leaf_130)
 
