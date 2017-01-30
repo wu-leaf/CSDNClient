@@ -19,10 +19,10 @@ com.android.support:cardview-v7:24.2.1
 
 ## Screenshots
 <img src="screenshots/gif1.gif" width="300" align="right" hspace="20">
-<img src="screenshots/2.png" width="25%" />
 <img src="screenshots/3.png" width="25%" />
 <img src="screenshots/4.png" width="25%" />
 <img src="screenshots/5.png" width="25%" />
+<img src="screenshots/6.png" width="25%" />
 
 
 
