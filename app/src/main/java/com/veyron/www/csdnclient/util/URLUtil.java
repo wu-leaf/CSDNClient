@@ -11,6 +11,7 @@ public class URLUtil {
     public static final int NEWS_TYPE_CLOUD = 3; // 云计算
     public static final int NEWS_TYPE_SD = 4; // 软件研发
 
+    public static final String TEST ="http://www.csdn.net/article/2017-01-22/2826689";
     public static final String BASE_URL_NEWS = "http://news.csdn.net/news/"; // 业界
     public static final String BASE_URL_MOBILE = "http://mobile.csdn.net/mobile/"; // 移动开发
     public static final String BASE_URL_CLOUD = "http://cloud.csdn.net/cloud/"; // 云计算

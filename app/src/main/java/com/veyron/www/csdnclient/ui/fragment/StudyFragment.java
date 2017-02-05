@@ -122,6 +122,7 @@ public class StudyFragment extends Fragment {
             public void onItemClick(View view, int position) {
                 Intent intent = new Intent(getActivity(), ContentActivity.class);
                 intent.putExtra("url", adapter.getList().get(position).getLink());
+                intent.putExtra("title","软件研发");
                 startActivity(intent);
             }
 

@@ -14,7 +14,10 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Created by Veyron on 2017/1/29.
+ * Function：解析新闻类
+ */
 
 public class NewsItemBiz {
     /**

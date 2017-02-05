@@ -9,7 +9,7 @@ import android.view.View;
 
 /**
  * Created by Veyron on 2017/1/29.
- * Function：
+ * Function：分割线
  */
 public class RecycleViewDivider extends RecyclerView.ItemDecoration {
 

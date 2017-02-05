@@ -4,9 +4,11 @@ import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.JavascriptInterface;
@@ -16,6 +18,10 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 import com.veyron.www.csdnclient.R;
+import com.veyron.www.csdnclient.util.HtmlUtil;
+
+import java.io.IOException;
+
 /**
  * Created by Veyron on 2017/1/29.
  * Function：用于展示资讯详情
@@ -24,6 +30,8 @@ public class ContentActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private WebView mWebView;
     private String url;
+    private String title;
+    ActionBar actionBar;
     // 用于记录出错页面的url 方便重新加载
     private String mFailingUrl = null;
     @Override
@@ -34,12 +42,17 @@ public class ContentActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        title = getIntent().getStringExtra("title");
+        actionBar = getSupportActionBar();
+        actionBar.setTitle(title);
 
         url=getIntent().getStringExtra("url");
         mWebView = (WebView) findViewById(R.id.webview);
         initWebViewSettings();
         initWebview();
     }
+
+
 
     private void initWebViewSettings() {
         mWebView.setOnTouchListener(new View.OnTouchListener() {

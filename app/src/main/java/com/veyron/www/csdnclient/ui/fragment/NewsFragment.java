@@ -18,6 +18,7 @@ import com.veyron.www.csdnclient.adapter.RecyclerviewAdapter;
 import com.veyron.www.csdnclient.biz.NewsItemBiz;
 import com.veyron.www.csdnclient.entity.NewsItem;
 import com.veyron.www.csdnclient.ui.activity.ContentActivity;
+import com.veyron.www.csdnclient.util.HtmlUtil;
 import com.veyron.www.csdnclient.util.URLUtil;
 import com.veyron.www.csdnclient.view.RecycleViewDivider;
 
@@ -125,6 +126,7 @@ public class NewsFragment extends Fragment {
             public void onItemClick(View view, int position) {
                 Intent intent = new Intent(getActivity(), ContentActivity.class);
                 intent.putExtra("url", adapter.getList().get(position).getLink());
+                intent.putExtra("title","业界资讯");
                 startActivity(intent);
             }
 
